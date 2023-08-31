@@ -390,7 +390,8 @@ export const Bot = (props: BotProps & { class?: string }) => {
                         defaultValue={userInput()}
                         onSubmit={handleSubmit}
                     />
-                </div>
+                </div
+                <Badge badgeBackgroundColor={props.badgeBackgroundColor} poweredByTextColor={props.poweredByTextColor} botContainer={botContainer} />
                 <BottomSpacer ref={bottomSpacer} />
             </div>
             {sourcePopupOpen() && <Popup isOpen={sourcePopupOpen()} value={sourcePopupSrc()} onClose={() => setSourcePopupOpen(false)} />}
